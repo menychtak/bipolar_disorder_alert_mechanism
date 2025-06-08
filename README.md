@@ -1,4 +1,4 @@
-Relapse Detection using Autoencoder and Random Forest
+# Relapse Detection using Autoencoder and Random Forest
 This project implements an alert mechanism to detect relapse events in patients with bipolar disorder using physiological and activity data. The approach uses an autoencoder trained only on normal (label = 0) data to detect anomalies, followed by evaluation and interpretation of the alerts.
 
 ### Dataset
