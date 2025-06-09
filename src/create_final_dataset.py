@@ -137,7 +137,7 @@ def process_all_dates(tar_dir, label_csv_path, output_csv_path):
 #                 continue
 
 #     # Parallel loading of all .tar.gz files
-#     print(f"🧵 Loading {len(tar_files)} tar files using {cpu_count()} processes...")
+#     print(f" Loading {len(tar_files)} tar files using {cpu_count()} processes...")
 #     with Pool(processes=cpu_count()) as pool:
 #         all_contents = pool.map(load_tar_contents, tar_files)
 
@@ -151,16 +151,16 @@ def process_all_dates(tar_dir, label_csv_path, output_csv_path):
 
 #     results = []
 #     for date, contents_list in sorted(grouped_by_date.items()):
-#         print(f"⚙️ Processing date: {date} with {len(contents_list)} file(s)")
+#         print(f" Processing date: {date} with {len(contents_list)} file(s)")
 #         features = aggregate_sensor_data(contents_list)
 #         features["date"] = date
 #         features["label"] = label_map.get(date, None)
 #         results.append(features)
-#         print(f"✅ Done: {date} → Label: {features['label']} | Files: {len(contents_list)}")
+#         print(f" Done: {date} → Label: {features['label']} | Files: {len(contents_list)}")
 
 #     df = pd.DataFrame(results)
 #     df.to_csv(output_csv_path, index=False)
-#     print(f"\n💾 Saved all daily features to: {output_csv_path}")
+#     print(f"\n Saved all daily features to: {output_csv_path}")
 
 
 # Example usage
