@@ -24,7 +24,7 @@ The patient used is identified as **5031** (ID: `5f615ea99e38890013062039`).
 
 ## Dataset Preparation
 
-Before model implementation, we constructed a clean, feature-rich dataset from the raw `.zip` files. For simplicity and computational efficiency, we focused on a single patient. The dataset preparation involved the following steps, implemented through Python scripts in the `code_for_preparing_dataset/` directory:
+Before model implementation, we constructed a clean, feature-rich dataset from the raw `.zip` files. For simplicity and computational efficiency, we focused on a single patient. The dataset preparation involved the following steps, implemented through Python scripts in the `src/` directory:
 
 - **Initial Exploration**  
   Using `stats_output.py` and `tar_files_missing.py` to assess file availability, date coverage, and missing data.
